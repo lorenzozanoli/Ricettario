@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ricettario</title>
+  <meta name="author" content="Lorenzo Zanoli" />
+  <meta name="description" content="Ricettario" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>†</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=JetBrains+Mono:wght@400;700&family=STIX+Two+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../recipes_style.css" />
+</head>
+
+<body>
+  <div class="card">
+
+    <header>
+      <div class="logo-box">
+        <span class="logo-symbol">&#8225;</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../recipes.html" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">Ricettario</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">B</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">C</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">D</span></a>
+        <span class="nav-divider"></span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero-title">Pumpkin Pie</h1>
+    </section>
+
+    <section class="ricetta-intro">
+
+  <div class="ricetta-foto">
+    <img src="../images/dessert/pumpkin-pie.jpeg" alt="Pumpkin Pie">
+  </div>
+
+  <div class="ricetta-specifiche">
+    <dl class="specifiche-lista">
+      <div class="specifica">
+        <dt>Preparazione</dt>
+        <dd>30 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Cottura</dt>
+        <dd>50 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Riposo</dt>
+        <dd>30 min + freddo</dd>
+      </div>
+      <div class="specifica">
+        <dt>Difficoltà</dt>
+        <dd>Media</dd>
+      </div>
+      <div class="specifica">
+        <dt>Porzioni</dt>
+        <dd>8 persone</dd>
+      </div>
+      <div class="specifica">
+        <dt>Stampo</dt>
+        <dd>24 cm</dd>
+      </div>
+    </dl>
+  </div>
+
+</section>
+
+    <section class="ricetta-corpo">
+
+      <div class="ingredienti">
+        <h2 class="sezione-titolo">Ingredienti</h2>
+
+        <div class="porzioni">
+          <button type="button" class="porzioni-btn" data-azione="meno" aria-label="Diminuisci persone">−</button>
+          <span class="porzioni-numero" id="persone">8</span>
+          <button type="button" class="porzioni-btn" data-azione="piu" aria-label="Aumenta persone">+</button>
+          <span class="porzioni-label">persone</span>
+        </div>
+
+        <ul class="lista-ingredienti" id="ingredienti">
+
+          <li class="ing-gruppo">Per la frolla</li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="2" data-unita="">2</span>
+            <span class="ing-nome">uova</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100 g</span>
+            <span class="ing-nome">zucchero</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="ml">100 ml</span>
+            <span class="ing-nome">olio di semi di girasole</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="300" data-unita="g">300 g</span>
+            <span class="ing-nome">farina 00</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="8" data-unita="g">8 g</span>
+            <span class="ing-nome">lievito per dolci <span class="ing-nota">mezza bustina</span></span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta">q.b.</span>
+            <span class="ing-nome">scorza di limone</span>
+          </li>
+
+          <li class="ing-gruppo">Per la crema</li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="500" data-unita="g">500 g</span>
+            <span class="ing-nome">zucca cotta <span class="ing-nota">circa 700–800 g cruda</span></span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="3" data-unita="">3</span>
+            <span class="ing-nome">uova</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100 g</span>
+            <span class="ing-nome">zucchero</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="ml">100 ml</span>
+            <span class="ing-nome">panna fresca</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="3" data-unita="g">3 g</span>
+            <span class="ing-nome">cannella in polvere</span>
+          </li>
+
+           <li class="ing">
+            <span class="ing-qta">q.b.</span>
+            <span class="ing-nome">semi di melagrana<span class="ing-nota">o mirtilli disidratati</span></span></span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="procedimento">
+        <h2 class="sezione-titolo">Procedimento</h2>
+        <ol class="lista-passi">
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione della frolla</h3>
+            <ul class="lista-sotto">
+              <li>Pulisci la zucca dal guscio, tagliala a pezzi e cuocila al vapore finché non risulta morbida. Poi lasciala raffreddare</li>
+              <li> In una bacinella capiente, mescola le uova, lo zucchero e l’olio di semi.</li>
+              <li>Aggiungi la farina e il lievito per dolci. Mescola finché l'impasto non risulta omogeneo.</li>
+              <li>Trasferisci la frolla sul piano di lavoro continuando a impastarla con l'aiuto di una manciata di farina, fino a ottenere un impasto liscio e omogeneo. Avvolgi il panetto nella pellicola e metti in frigo per almeno mezz'ora.</li>
+            </ul>
+          </li>
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione della crema</h3>
+            <ul class="lista-sotto">
+              <li>Frulla la zucca cotta, e mescola la purea ottenuta insieme alle uova e allo di zucchero con le fruste elettriche.</li>
+              <li>Incorpora la panna, la cannella e la buccia di limone grattugiata e mescola ancora.</li>
+            </ul>
+          </li>
+
+          <li class="fase">
+            <h3 class="fase-titolo">Decorazione e Cottura</h3>
+            <ul class="lista-sotto">
+              <li>Riprendi la pasta, stendila sul piano di lavoro e avvolgila nel matterello.</li>
+              <li>Fodera uno stampo da 24 cm di diametro, imburrato e infarinato, con la frolla e rifila i bordi.</li>
+              <li>Con la frolla avanzata taglia delle decorazioni a forma di foglia autunnale.</li>
+              <li>Versa il ripieno alla zucca nello stampo e inforna in forno preriscaldato ventilato a 170°C per circa 50 minuti, oppure a 180°C per 40 minuti se il forno è statico.</li>
+              <li>Inforna anche le decorazioni assieme alla torta, e toglile quando sono solide e dorate, prima della fine delle cottura della torta</li>
+              <li>Spolverare di cannella, aggiungere alla torta le decorazioni e, a piacere, i semi di melagrana o dei mirtilli disidratati. Lasciar riposare in frigo prima di servire.</li>
+            </ul>
+          </li>
+
+        </ol>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <span>© Lorenzo Zanoli</span>
+      <span class="logo-symbol">&#8225;</span>
+    </footer>
+
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
