@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ricettario</title>
+  <meta name="author" content="Lorenzo Zanoli" />
+  <meta name="description" content="Ricettario" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>†</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=JetBrains+Mono:wght@400;700&family=STIX+Two+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+  <div class="card">
+
+    <header>
+      <div class="logo-box">
+        <span class="logo-symbol">&#8225;</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../../index.html" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">Ricettario</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">B</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">C</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">D</span></a>
+        <span class="nav-divider"></span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero-title">Tiramisù</h1>
+    </section>
+
+    <section class="ricetta-intro">
+
+  <div class="ricetta-foto">
+    <img src="../../images/dessert/tiramisu.jpeg" alt="Tiramisù">
+  </div>
+
+  <div class="ricetta-specifiche">
+    <dl class="specifiche-lista">
+      <div class="specifica">
+        <dt>Preparazione</dt>
+        <dd>40 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Cottura</dt>
+        <dd>0 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Costo</dt>
+        <dd>Basso</dd>
+      </div>
+      <div class="specifica">
+        <dt>Difficoltà</dt>
+        <dd>Facile</dd>
+      </div>
+      <div class="specifica">
+        <dt>Porzioni</dt>
+        <dd>4 persone</dd>
+      </div>
+    </dl>
+  </div>
+
+</section>
+
+    <section class="ricetta-corpo">
+
+      <div class="ingredienti">
+        <h2 class="sezione-titolo">Ingredienti</h2>
+
+        <div class="porzioni">
+          <button type="button" class="porzioni-btn" data-azione="meno" aria-label="Diminuisci persone">−</button>
+          <span class="porzioni-numero" id="persone">4</span>
+          <button type="button" class="porzioni-btn" data-azione="piu" aria-label="Aumenta persone">+</button>
+          <span class="porzioni-label">persone</span>
+        </div>
+
+        <ul class="lista-ingredienti" id="ingredienti">
+
+          <li class="ing">
+            <span class="ing-qta" data-base="4" data-unita="">4</span>
+            <span class="ing-nome">uova</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100 g</span>
+            <span class="ing-nome">zucchero</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="500" data-unita="g">500 g</span>
+            <span class="ing-nome">mascarpone</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100 g</span>
+            <span class="ing-nome">caffé</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="20" data-unita="">25</span>
+            <span class="ing-nome">savoiardi</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta">q.b.</span>
+            <span class="ing-nome">cacao amaro in polvere</span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="procedimento">
+        <h2 class="sezione-titolo">Procedimento</h2>
+        <ol class="lista-passi">
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione del caffé</h3>
+            <ul class="lista-sotto">
+              <li>Prepara il caffé e lascialo raffreddare in un piatto fondo, eventualmente aggiungendo due cucchiaini di zucchero.</li>
+            </ul>
+          </li>
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione della crema</h3>
+            <ul class="lista-sotto">
+              <li>Separa tuorli e albumi in due bacinelle diverse, assicurandoti che non ci sia traccia di tuorlo negli albumi.</li>
+              <li>Con le fruste elettriche, monta i tuorli aggiungendo metà dello zucchero e, poco per volta, il mascarpone.</li>
+              <li>Monta gli albumi a neve con il restante zucchero, fino a quando capovolgendo la bacinella rimangono stabili.</li>
+              <li>Poco per volta, con un leccapentole, incorpora gli albumi nella crema di tuorli, mescolando com movimenti dal basso verso l'alto. Continua fino a ottenere una crema omogenea.</li>
+            </ul>
+          </li>
+
+          <li class="fase">
+            <h3 class="fase-titolo">Decorazione</h3>
+            <ul class="lista-sotto">
+              <li>Metti un sottilissimo strato di crema</li>
+              <li>Immergi i savoiardi nel caffé per 1/2 secondi e disponili nella ciotola del tiramisù fino a formare uno strato completo.</li>
+              <li>Ricopri con un altro strato di crema fino a quando i savoiardi sono completamente coperti.</li>
+              <li>Ripeti l'operazione fino a esaurimento degli ingredienti, terminando con uno strato di crema.</li>
+              <li>Lascia riposare in frigo, e dai una spolverata di cacao amaro prima di servire.</li>
+            </ul>
+          </li>
+
+
+
+        </ol>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <span>© Lorenzo Zanoli</span>
+      <span class="logo-symbol">&#8225;</span>
+    </footer>
+
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

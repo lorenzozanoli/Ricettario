@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ricettario</title>
+  <meta name="author" content="Lorenzo Zanoli" />
+  <meta name="description" content="Ricettario" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>†</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=JetBrains+Mono:wght@400;700&family=STIX+Two+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+  <div class="card">
+
+    <header>
+      <div class="logo-box">
+        <span class="logo-symbol">&#8225;</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../../index.html" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">Ricettario</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">B</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">C</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">D</span></a>
+        <span class="nav-divider"></span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero-title">Torta ai Tre Cioccolati</h1>
+    </section>
+
+    <section class="ricetta-intro">
+
+  <div class="ricetta-foto">
+    <img src="../../images/dessert/tre-cioccolati.jpeg" alt="Torta ai Tre Cioccolati">
+  </div>
+
+  <div class="ricetta-specifiche">
+    <dl class="specifiche-lista">
+      <div class="specifica">
+        <dt>Preparazione</dt>
+        <dd>60 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Cottura</dt>
+        <dd>15 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Costo</dt>
+        <dd>Basso</dd>
+      </div>
+      <div class="specifica">
+        <dt>Difficoltà</dt>
+        <dd>Media</dd>
+      </div>
+      <div class="specifica">
+        <dt>Porzioni</dt>
+        <dd>12 persone</dd>
+      </div>
+    </dl>
+  </div>
+
+</section>
+
+    <section class="ricetta-corpo">
+
+      <div class="ingredienti">
+        <h2 class="sezione-titolo">Ingredienti</h2>
+
+        <div class="porzioni">
+          <button type="button" class="porzioni-btn" data-azione="meno" aria-label="Diminuisci persone">−</button>
+          <span class="porzioni-numero" id="persone">4</span>
+          <button type="button" class="porzioni-btn" data-azione="piu" aria-label="Aumenta persone">+</button>
+          <span class="porzioni-label">persone</span>
+        </div>
+
+        <ul class="lista-ingredienti" id="ingredienti">
+          
+          <li class="ing-gruppo">Per la base</li>
+          <li class="ing">
+            <span class="ing-qta" data-base="52" data-unita="g">52g</span>
+            <span class="ing-nome">tuorli</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="112" data-unita="g">112g</span>
+            <span class="ing-nome">albumi</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="157" data-unita="g">157g</span>
+            <span class="ing-nome">zucchero a velo</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="15" data-unita="g">15 g</span>
+            <span class="ing-nome">fecola di patate</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="45" data-unita="g">45g</span>
+            <span class="ing-nome">cacao amaro in polvere</span>
+          </li>
+
+          <li class="ing-gruppo">Per la mousse</li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="640" data-unita="g">640g</span>
+            <span class="ing-nome">panna fresca liquida</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="50" data-unita="g">50g</span>
+            <span class="ing-nome">zucchero</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="500" data-unita="ml">500ml</span>
+            <span class="ing-nome">latte intero</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100g</span>
+            <span class="ing-nome">cioccolato fondente</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100g</span>
+            <span class="ing-nome">cioccolato al latte</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100g</span>
+            <span class="ing-nome">cioccolato bianco</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="6" data-unita="">6</span>
+            <span class="ing-nome">tuorli</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="20" data-unita="g">20g</span>
+            <span class="ing-nome">gelatina in fogli</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="1" data-unita="">1</span>
+            <span class="ing-nome">bustina di vanillina</span>
+          </li>
+
+          <li class="ing-gruppo">Decorazione</li>
+
+          <li class="ing">
+            <span class="ing-qta">q.b.</span>
+            <span class="ing-nome">scaglie di cioccolato</span>
+          </li>
+
+           <li class="ing">
+            <span class="ing-qta">q.b.</span>
+            <span class="ing-nome">mirtilli, lamponi, more</span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="procedimento">
+        <h2 class="sezione-titolo">Procedimento</h2>
+        <ol class="lista-passi">
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione della base</h3>
+            <ul class="lista-sotto">
+              <li>Monta a neve soda gli albumi con <span class="qta-dinamica" data-base="105" data-unita="g">105g</span> di zucchero a velo, finché sono gonfie e spumose</li>
+              <li>Monta i restanti tuorli con i retanti <span class="qta-dinamica" data-base="52" data-unita="g">52g</span> di zucchero fino ad avere un composto chiaro e spumoso.</li>
+              <li>Incorpora tuorli agli albumi amalgamento con movimenti dall'alto verso il basso.</li>
+              <li>Aggiungi la fecola e il cacao con un setaccio e incorpora sempre con movimenti dall'alto verso il basso.</li>
+              <li>Disponi il composto su una teglia rettangolare, sopra ad un foglio di carta da forno, e inforna a forno statico a 200°C per circa 25 minuti. per 9-10 minuti.</li>
+              <li>Una volta pronta, lascia raffreddare e con una tortiera ritaglia un disco che sarà la base della torta.</li>
+            </ul>
+          </li>
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione della crema inglese</h3>
+            <ul class="lista-sotto">
+              <li>Scalda il latte insieme alla bustina di vanillina a temperatura media, spegni appena raggiunge il bollore.</li>
+              <li>A parte, ammolla la gelatina in acqua fredda per 8 minuti.</li>
+              <li>In un tegame, amalgama i tuorli con <span class="qta-dinamica" data-base="50" data-unita="g">50g</span> di zucchero.</li>
+              <li>Unisci il latte caldo e mescola sul fornello, misurando la temperatura per non superare gli 80°C, o le uova inizieranno a cuocere.</li>
+              <li>Per pochi minuti lascia sul fornello, poi spegni il fuoco e inserisci la gelatina, dopo averla strizzata.</li>
+              <li>Dividi la crema in tre ciotole, dividendo il tutto in tre parti uguali.</li>
+              </ul>
+          </li>
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione della mousse</h3>
+            <ul class="lista-sotto">
+              <li>Sciogli in microonde o a bagnomaria i tre cioccolati<./li>
+              <li>Unisci i tre cioccolati in ognuna delle tre ciotole di crema inglese.</li>
+              <li>Lascia raffreddare le creme per 15 minuti, fino a raggiungere una temperatura di circa 25°C.</li>
+              <li>Raggiunta la temperatura, unisci <span class="qta-dinamica" data-base="200" data-unita="g">200g</span> di panna montata in ciascuna ciotola.</li>
+              <li>Lascia riposare in frigo, e dai una spolverata di cacao amaro prima di servire.</li>
+            </ul>
+          </li>
+          
+          <li class="fase">
+            <h3 class="fase-titolo">Assemblaggio e decorazione</h3>
+            <ul class="lista-sotto">
+              <li>Assicurati che la base della torta sia ben incastrata nella tortiera, e versa la crema al cioccolato fondente.</li>
+              <li>Fai riposare in freezer per 20 minuti, mentre le altre due creme riposano a temperatura ambiente.</li>
+              <li>Ripeti per le altre due creme.</li>
+              <li>Lascia riposare in freezer la torta completa per 3-4 ore o per tutta la notte.</li>
+              <li>Decora con scaglie di cioccolato e frutti di bosco.</li>
+              <li>Circa un'ora prima di servirla, toglila dal freezer e con un coltello separala dai bordi della tortiera.</li>
+              <li>Lascia riposare in frigo fino al momento di servirla.</li>
+            </ul>
+          </li>
+
+
+        </ol>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <span>© Lorenzo Zanoli</span>
+      <span class="logo-symbol">&#8225;</span>
+    </footer>
+
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

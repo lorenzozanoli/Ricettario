@@ -1,14 +1,16 @@
 /* ============ WIDGET PORZIONI ============ */
 
-const BASE_PERSONE = 8;   // <-- la tua ricetta è calibrata per 8 persone
+const numeroEl = document.getElementById("persone");
+const bottoni = document.querySelectorAll(".porzioni-btn");
+const qtaEls = document.querySelectorAll(".ing-qta[data-base], .qta-dinamica[data-base]");
+
+// La base viene letta dall'HTML: <span id="persone">4</span>
+// In questo modo ogni ricetta può avere la sua base (4, 6, 8...)
+const BASE_PERSONE = parseInt(numeroEl.textContent, 10) || 1;
 const MIN_PERSONE = 1;
 const MAX_PERSONE = 20;
 
 let persone = BASE_PERSONE;
-
-const numeroEl = document.getElementById("persone");
-const bottoni = document.querySelectorAll(".porzioni-btn");
-const qtaEls = document.querySelectorAll(".ing-qta[data-base]");
 
 /* formatta un numero: intero senza decimali, decimale con virgola */
 function formattaNumero(n) {

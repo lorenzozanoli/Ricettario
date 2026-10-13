@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ricettario</title>
+  <meta name="author" content="Lorenzo Zanoli" />
+  <meta name="description" content="Ricettario" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>†</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=JetBrains+Mono:wght@400;700&family=STIX+Two+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+  <div class="card">
+
+    <header>
+      <div class="logo-box">
+        <span class="logo-symbol">&#8225;</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../../index.html" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">Ricettario</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">B</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">C</span></a>
+        <a href="#" class="nav-link"><span class="nav-arrow">▶</span><span class="nav-label">D</span></a>
+        <span class="nav-divider"></span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero-title">Tres Leches</h1>
+    </section>
+
+    <section class="ricetta-intro">
+
+  <div class="ricetta-foto">
+    <img src="../../images/dessert/tres-leches.jpeg" alt="Tres Leches">
+  </div>
+
+  <div class="ricetta-specifiche">
+    <dl class="specifiche-lista">
+      <div class="specifica">
+        <dt>Preparazione</dt>
+        <dd>40 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Cottura</dt>
+        <dd>40 min</dd>
+      </div>
+      <div class="specifica">
+        <dt>Costo</dt>
+        <dd>Basso</dd>
+      </div>
+      <div class="specifica">
+        <dt>Difficoltà</dt>
+        <dd>Facile</dd>
+      </div>
+      <div class="specifica">
+        <dt>Porzioni</dt>
+        <dd>8 persone</dd>
+      </div>
+    </dl>
+  </div>
+
+</section>
+
+    <section class="ricetta-corpo">
+
+      <div class="ingredienti">
+        <h2 class="sezione-titolo">Ingredienti</h2>
+
+        <div class="porzioni">
+          <button type="button" class="porzioni-btn" data-azione="meno" aria-label="Diminuisci persone">−</button>
+          <span class="porzioni-numero" id="persone">8</span>
+          <button type="button" class="porzioni-btn" data-azione="piu" aria-label="Aumenta persone">+</button>
+          <span class="porzioni-label">persone</span>
+        </div>
+
+        <ul class="lista-ingredienti" id="ingredienti">
+          
+          <li class="ing-gruppo">Per la base</li>
+          <li class="ing">
+            <span class="ing-qta" data-base="180" data-unita="g">180g</span>
+            <span class="ing-nome">farina 00</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="200" data-unita="g">200g</span>
+            <span class="ing-nome">zucchero</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="1" data-unita="">1</span>
+            <span class="ing-nome">bustina di lievito</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="5" data-unita="">5</span>
+            <span class="ing-nome">uova</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="1" data-unita="">1</span>
+            <span class="ing-nome">bustina di vanillina</span>
+          </li>
+
+          <li class="ing-gruppo">Per la bagna</li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="240" data-unita="g">240g</span>
+            <span class="ing-nome">latte</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="100" data-unita="g">100g</span>
+            <span class="ing-nome">latte evaporato</span>
+          </li>
+
+          <li class="ing-gruppo">Topping</li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="180" data-unita="g">180g</span>
+            <span class="ing-nome">panna da montare</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="200" data-unita="g">200g</span>
+            <span class="ing-nome">zucchero</span>
+          </li>
+
+          <li class="ing">
+            <span class="ing-qta" data-base="1" data-unita="">1</span>
+            <span class="ing-nome">bustina di vanillina</span>
+          </li>
+
+           <li class="ing">
+            <span class="ing-qta">q.b.</span>
+            <span class="ing-nome">cannella</span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="procedimento">
+        <h2 class="sezione-titolo">Procedimento</h2>
+        <ol class="lista-passi">
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione del latte evaporato</h3>
+            <ul class="lista-sotto">
+              <li>Metti a bollire del latte intero, appena inizia a bollire abbassa la fiamma al minimo e prosegui per un'ora circa, finché si dimezza in volume.</li>
+            </ul>
+          </li>
+
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione della torta</h3>
+            <ul class="lista-sotto">
+              <li>Mischia a mano il burro e lo zucchero finché non diventano omogenei</li>
+              <li>Aggiungi uova e vanillina nel composto e frulla con il mixer</li>
+              <li>Versa nella teglia (preferibilmente rettangolare) e inforna a 175°C per 30-40 minuti circa. Togli dal forno solo quando uno stuzzicadenti infilato al centro della torta ne esce completamente asciutto.</li>
+              <li>Lascia riposare la torta fuori dal frigo.</li>
+              <li>Una volta raffreddata, bucherellare tutta la torta con uno stuzzicadenti e una forchetta.</li>
+              <li>Mischiare latte, latte evaporato e latte condensato, e versarli sulla torta.</li>
+              <li>Lasciar riposare in frigo tutta la notte.</li>
+              </ul>
+          </li>
+          
+          <li class="fase">
+            <h3 class="fase-titolo">Preparazione del topping</h3>
+            <ul class="lista-sotto">
+              <li>Monta la panna aggiungendo poco a poco lo zucchero e la vanillina, anche se non è montata a neve fa niente, basta che raggiunga una consistenza più densa.</li>
+              <li>Lasciar riposare in frigo, aggiungere cannella al momento del servizio.</li>
+             </ul>
+          </li>
+
+
+        </ol>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <span>© Lorenzo Zanoli</span>
+      <span class="logo-symbol">&#8225;</span>
+    </footer>
+
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
